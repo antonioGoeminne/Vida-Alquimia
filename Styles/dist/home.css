@@ -1,3 +1,62 @@
-header {
-  color: red;
+.main--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-color);
+}
+.main--header .main--logo {
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color: var(--secondary-color);
+}
+.main--header .main--logo .logo--momentaneo {
+  font-size: 2.5rem;
+}
+.main--header .main--menu {
+  margin-right: 20%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.main--header .main--menu .menu--options {
+  display: flex;
+}
+.main--header .main--menu .menu--options .option {
+  margin-left: 5rem;
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+
+.main--article {
+  background-color: var(--main-color);
+}
+.main--article .info--wrap {
+  width: 50%;
+  margin-left: 15%;
+}
+.main--article .info--wrap .main--article_title {
+  font-size: 5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main--article .info--wrap .main--article_text {
+  margin-top: 3%;
+  margin-bottom: 5%;
+  width: 80%;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.main--article .info--wrap .article--button_wrap {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+.main--article .info--wrap .article--button_wrap .main--article_button {
+  padding: 1rem;
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: var(--secondary-color);
+}
+.main--article .info--wrap .article--button_wrap .button--text {
+  color: var(--secondary-color);
+  text-decoration: underline;
 }

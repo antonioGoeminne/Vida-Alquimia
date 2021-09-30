@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+a{
+    color:var(--text-color);
+}
+:root{
+    --main-color: #F7EFE9;
+    --secondary-color:#C8A48A;
+    --text-color: #6d615a ;
+}
