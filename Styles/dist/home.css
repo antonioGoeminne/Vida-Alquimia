@@ -23,40 +23,76 @@
 }
 .main--header .main--menu .menu--options .option {
   margin-left: 5rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   white-space: nowrap;
 }
 
 .main--article {
+  position: relative;
   background-color: var(--main-color);
 }
-.main--article .info--wrap {
+.main--article .main--image_wrap {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 50%;
+}
+.main--article .main--image_wrap img {
+  position: relative;
+  z-index: 80;
+  width: 100%;
+  border-bottom-left-radius: 60%;
+}
+.main--article .main--image_wrap .barra--inferior {
+  position: relative;
+  bottom: 150px;
+  height: 300px;
+  width: 100%;
+  border: 2px solid var(--secondary-color);
+  border-radius: 9999px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+}
+.main--article .first--main_wrap {
+  position: relative;
+  display: flex;
+}
+.main--article .first--main_wrap .info--wrap {
+  position: relative;
+  z-index: 80;
+  top: 80px;
+  height: 40%;
   width: 50%;
   margin-left: 15%;
 }
-.main--article .info--wrap .main--article_title {
-  font-size: 5rem;
+.main--article .first--main_wrap .info--wrap .main--article_title {
+  font-size: 5.5em;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.main--article .info--wrap .main--article_text {
+.main--article .first--main_wrap .info--wrap .main--article_text {
   margin-top: 3%;
   margin-bottom: 5%;
   width: 80%;
   font-size: 1.5rem;
   line-height: 1.5;
 }
-.main--article .info--wrap .article--button_wrap {
+.main--article .first--main_wrap .info--wrap .article--button_wrap {
   display: flex;
   align-items: center;
   gap: 5%;
 }
-.main--article .info--wrap .article--button_wrap .main--article_button {
+.main--article .first--main_wrap .info--wrap .article--button_wrap .main--article_button {
   padding: 1rem;
   font-size: 1.3rem;
   color: #fff;
   background-color: var(--secondary-color);
 }
-.main--article .info--wrap .article--button_wrap .button--text {
+.main--article .first--main_wrap .info--wrap .article--button_wrap .button--text {
   color: var(--secondary-color);
   text-decoration: underline;
+}
+.main--article .quienes--somos_info, .main--article .quienes--somos-ventajas {
+  position: relative;
+  top: 1000px;
 }
