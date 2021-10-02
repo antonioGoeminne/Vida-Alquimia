@@ -94,8 +94,33 @@
        }
        
     }
-    .quienes--somos_info, .quienes--somos-ventajas{
-        position: relative;
-        top:1000px;
+    .quienes--somos_info{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 8rem;
+        margin-left: 5rem;
+            .quienes--somos-title{
+                font-size: 3rem;
+            }
+            .quienes--somos-text{
+                width: 50%;
+                font-size: 1.5rem;
+            }
+        
     }
+   .quienes--somos-ventajas{
+       display: flex;
+       margin-top: 8rem;
+       margin-left: 10rem;
+       .ventajas{
+           .ventajas--title{
+               font-size: 1.5rem;
+               margin-bottom: 5%;
+           }
+           .ventajas--text{
+               line-height: 1.8rem;
+               width: 50%;
+           }
+       }
+   }
 }
