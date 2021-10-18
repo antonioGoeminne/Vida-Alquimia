@@ -5,15 +5,15 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: 'Bebas Neue Regular';
 }
-body{
-    background-color:var(--main-color);
-}
+
 a{
     color:var(--text-color);
 }
 :root{
     --main-color: #F7EFE9;
     --secondary-color:#C8A48A;
-    --text-color: #6d615a ;
+    --third-color:#A78364;
+    --text-color: #615E5B;
 }
