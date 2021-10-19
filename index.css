@@ -9,7 +9,7 @@
 }
 
 a{
-    color:var(--text-color);
+    color:inherit;
 }
 :root{
     --main-color: #F7EFE9;

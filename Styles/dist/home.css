@@ -1,3 +1,11 @@
+.wsp--btn {
+  position: fixed;
+  bottom: 0;
+  z-index: 200;
+  right: 0;
+  margin: 2rem;
+}
+
 .main--header {
   display: flex;
   justify-content: space-between;
@@ -22,6 +30,7 @@
   display: flex;
 }
 .main--header .main--menu .menu--options .option {
+  font-family: "Libre Bakersville Regular";
   margin-left: 5rem;
   font-size: 1.3rem;
   white-space: nowrap;
@@ -83,6 +92,8 @@
   font-size: 1.5rem;
   line-height: 1.5;
   font-family: "Libre Bakersville Regular";
+  color: var(--text-color);
+  letter-spacing: 1px;
 }
 .main--article .first--main_wrap .info--wrap .article--button_wrap {
   display: flex;
@@ -94,10 +105,12 @@
   font-size: 1.3rem;
   color: #fff;
   background-color: var(--secondary-color);
+  font-family: "Libre Bakersville Regular";
 }
 .main--article .first--main_wrap .info--wrap .article--button_wrap .button--text {
   color: var(--secondary-color);
   text-decoration: underline;
+  font-family: "Libre Bakersville Regular";
 }
 .main--article .quienes--somos_info {
   display: flex;
@@ -117,6 +130,7 @@
   display: flex;
   margin-top: 8rem;
   margin-left: 10rem;
+  padding-bottom: 5rem;
 }
 .main--article .quienes--somos-ventajas .ventajas .ventajas--title {
   font-size: 1.5rem;
@@ -136,6 +150,7 @@
   margin: 10rem 15rem;
 }
 .second--article .article--info_wrap {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -143,9 +158,11 @@
 }
 .second--article .article--info_wrap .fondo--color {
   position: absolute;
-  z-index: 2;
-  background: red;
+  z-index: 1;
+  background: var(--main-color);
   width: 100%;
+  height: 100%;
+  bottom: -40%;
 }
 .second--article .article--info_wrap .image--personalidades_wrap {
   position: relative;
@@ -161,7 +178,7 @@
   top: 120px;
   width: 50%;
   background-color: #fff;
-  z-index: 80;
+  z-index: 10;
 }
 .second--article .article--info_wrap .image--personalidades_wrap .frase--wrap .frase--text {
   line-height: 1.3;
@@ -186,6 +203,8 @@
   font-family: "Libre Bakersville Regular";
 }
 .second--article .article--info_wrap .second--article-text_wrap {
+  position: relative;
+  z-index: 80;
   width: 30%;
 }
 .second--article .article--info_wrap .second--article-text_wrap .second--article_text {
@@ -194,7 +213,16 @@
 }
 
 .servicios {
+  position: relative;
   background-color: var(--third-color);
+}
+.servicios .fondo--color2 {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 50%;
+  background-color: #fff;
+  bottom: 0;
 }
 .servicios .servicios--title_wrap {
   width: 100%;
@@ -208,6 +236,8 @@
   padding: 4rem;
 }
 .servicios .servicios--box {
+  position: relative;
+  z-index: 100;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -243,5 +273,68 @@
   width: 150px;
   padding: 2px;
   height: 50px;
-  background-color: #fff;
+  background-color: var(--third-color);
+}
+
+.footer--wrap {
+  background: var(--main-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 8rem;
+  padding-top: 8rem;
+}
+.footer--wrap .footer--element_media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+.footer--wrap .footer--element_media .footer--social_title {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  padding: 2rem;
+  color: var(--third-color);
+}
+.footer--wrap .footer--element_media .social--media_footer {
+  display: flex;
+}
+.footer--wrap .footer--element_media .social--media_footer .social--element {
+  margin-left: 2rem;
+}
+.footer--wrap .footer--element_contact .footer--contact_text {
+  padding: 2rem;
+  font-size: 3rem;
+  color: var(--third-color);
+}
+.footer--wrap .footer--element_contact .contact--wrap {
+  display: flex;
+  align-items: center;
+}
+.footer--wrap .footer--element_contact .contact--wrap .contact {
+  font-size: 1.5rem;
+  font-family: "Libre Bakersville Regular";
+  padding-left: 1rem;
+}
+
+.final--element {
+  background: var(--main-color);
+}
+.final--element .footer--separator {
+  margin-bottom: 2rem;
+  background: var(--third-color);
+  height: 1px;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+}
+.final--element .final--text_wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.final--element .final--text_wrap .final--title {
+  font-size: 2.5rem;
+  color: var(--third-color);
+  padding-bottom: 2rem;
 }
